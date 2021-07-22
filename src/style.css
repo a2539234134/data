@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+/* 设置整体的容器 */
+.news-wrapper{
+  width: 350px;
+  height: 400px;
+  background: whitesmoke;
+  margin: 150px auto;
+  border: 1px black solid;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .25);
+}
+
+/* -------------------------------------------------------- */
+.title-limit{
+  width: 100%;
+  height:49px;
+  /* border-bottom: 1px rgba(34, 33, 33, 0.719) solid; */
+  vertical-align: middle;
+  position: relative;
+  background: rgb(217, 217, 217);
+}
+
+.title-limit h1{
+  display: inline;
+  margin: 0 9px;
+  font-size: 30px;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+}
+
+.title-limit .limit{
+  margin: 0 11px;
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.title-limit .limit button{
+  width: 70px;
+  height: 35px;
+  margin: 0 5px;
+  color: white;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  background-image:linear-gradient(to bottom right, rgb(80, 80, 255), rgb(253, 119, 119));
+  box-shadow: 0 0 6px 2px rgba(0, 0, 255, 0.379);
+}
+
+/* 设置span的悬停效果 */
+#up-title:hover,
+#down-title:hover{
+  /* 移入后鼠标变小手，颜色变为红色 */
+  cursor: pointer;
+  font-weight: 800;
+}
+
+/* -------------------------------------------------------- */
+/* 图片的容器 */
+.imgs-wrapper{
+  width: 100%;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.imgs-wrapper .imgs img{
+  vertical-align: bottom;
+  width: 100%;
+  height: 175px;
+}
+
+.imgs-wrapper .q{
+  background: darkgray;
+  width: 100%;
+  height: 25px;
+  text-align: center;
+}
+
+/* -------------------------------------------------------- */
+/* 相关信息列表部分 */
+.info-wrapper{
+  width: 100%;
+  height: 100px;
+  /* border: 1px solid red; */
+}
+
+.info-ul{
+  padding: 0 30px;
+}
+
+/* 伪元素添加正方形 */
+
+.info-ul li::before{
+  content: '■';
+  margin-right: 12px;
+  font-size: 12px;
+  color: rgb(76, 76, 76);
+}
+
+.info-ul li{
+  margin: 3px 0;
+}
+
+.info-ul li:hover a{
+  text-decoration: underline;
+}

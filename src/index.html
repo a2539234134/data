@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>express + mongoose + jQuery的应用</title>
+  <!-- 
+    制作一个新闻框架，将数据库中的新闻数据在页面中展示出来
+   -->
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="news-wrapper">
+    <!-- 标题部分 -->
+    <div class="title-limit">
+      <h1 id="title-h1"></h1>
+      <div class="limit">
+        <button id="up-title">上一条</button>
+        <button id="down-title">下一条</button>
+      </div>
+    </div>
+
+    <!-- 图片部分 -->
+    <div class="imgs-wrapper">
+      <div class="imgs" id="imgss"></div>
+      <div class="q" id="quote"></div>
+    </div>
+
+    <!-- 相关信息列表部分 -->
+    <div class="info-wrapper">
+      <ul class="info-ul">
+        <li><a class="info-one" id="info1" href="javascript:;"></a></li>
+        <li><a class="info-two" id="info2" href="javascript:;"></a></li>
+        <li><a class="info-three" id="info3" href="javascript:;"></a></li>
+        <li><a class="info-four" id="info4" href="javascript:;"></a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
